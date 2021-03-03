@@ -1,0 +1,15 @@
+Data/Datasets/places365_standard/noisy_annotations_RGB/
+
+Data/Datasets/places365_standard/noisy_scores_RGB/
+
+Data/Datasets/places365_standard/train/
+
+Data/Datasets/places365_standard/val/
+
+Attribution Results/places365_standard/
+
+__pycache__/
+
+\.idea/
+
+*.tar

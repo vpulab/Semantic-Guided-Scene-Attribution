@@ -1,0 +1,25 @@
+RESULTS:
+    OUTPUT_DIR: Attribution Results
+
+DATASET:
+    NAME: places365_standard
+    ROOT: ./Data/Datasets/
+    SCENE_LABELS: ./Data/Datasets/places365_standard/scene_names.txt
+#    SEM_LABELS: ./Data/Datasets/ADEChallengeData2016/objectInfo150.txt
+    N_CLASSES_SCENE: 365
+    N_CLASSES_SEM: 151
+
+DATALOADER:
+    NUM_WORKERS: 8
+
+MODEL:
+    ARCH: ResNet-18
+    PATH: ./Data/Model Zoo/places365_standard/
+    NAME: RGB_ResNet18_Places
+
+VALIDATION:
+    PRINT_FREQ: 50
+    BATCH_SIZE:
+        TRAIN: 200
+        TEST: 200
+    SEM_OCCLUSIONS: True
